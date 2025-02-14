@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazafaka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="envelope" onclick="openEnvelope()">
+        <div class="flap"></div>
+        <div class="body"></div>
+        <div class="letter" onclick="flipLetter(event)">
+            <div class="front">
+                <img width="320" height="240" src="./Template to video 丨 AI Kissing.gif"/>
+                <p>LOVE U SO MUCH <br>MY AMADZONKA </p>
+                <img width="220" height="140" src="./1020169.png"/>
+                <p class="click">Нажми еще раз</p>
+            </div>
+            <div class="back">
+                <p>Эля ………. <br>Никогда не слышал как вагина пердит <br>От мыслей о тебе в мозгу коротит <br>Думать о других претит <br>Никогда не возьму я кредит <br>Под большие проценты <br>На биологии проходим редуценты <br>Еще плаценты разные бывают <br>Цыгане на вокзале безобразные обитают <br>Вернемся к биологии <br>Согласно гинекологии Вагина это женский пол <br>Мой папа любит колумбийский помол <br>Это кофе <br>Дразнить меня ты профи, своей улыбкой <br>Увидимся накормлю тебя рыбкой <br>И очень хочу чтоб ты тоже <br>Какие мысли мне приходят боже <br>Но мне это нравится <br>Ведь ты настоящая красавица <br> От фантазий не могу избавиться</p>
+                <p>Извини что повторяюсь <br>Писать складно я пытаюсь <br>Влюбился я в тебя фатально <br>А еще хочу тебя вагинально <br>Можно орально <br>А можно все сразу <br>Обещаю, не подцепишь от меня заразу <br>Помню поцелуй наш в первый раз <br>А Путин пидорас</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openEnvelope() {
+            const envelope = document.querySelector('.envelope');
+            envelope.classList.add('open');
+        }
+
+        function flipLetter(event) {
+            event.stopPropagation(); // Предотвращение срабатывания события клика на конверте
+            const letter = document.querySelector('.letter');
+            letter.classList.toggle('flipped');
+        }
+    </script>
+</body>
+</html
